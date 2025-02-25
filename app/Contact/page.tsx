@@ -36,7 +36,11 @@ function App() {
 
   return (
     <>
+<<<<<<< HEAD
       <div className="min-h-screen bg-black flex items-center justify-center pt-44 pb-24 md:pb-12 md:pt-16">
+=======
+      <div className="min-h-screen bg-black flex items-center justify-center pt-6 md:pt-12">
+>>>>>>> 4f5dfe3 (first commit)
           <ContactForm />
       </div>
     </>

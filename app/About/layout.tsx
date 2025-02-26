@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Header from "../component/common/Header";
 import Footer from "../component/common/Footer";
-import ContactBtn from "../component//ui/ContactBtn";
+import ContactBtn from "../component/ui/ContactBtn";
 
 export const metadata: Metadata = {
-  title: "Courses | UstazPortal",
-  description: "This is a Courses page.",
+  title: "AboutMe | UstazPortal",
+  description: "This is a Tajweed Courses page.",
 };
 
 export default function RootLayout({

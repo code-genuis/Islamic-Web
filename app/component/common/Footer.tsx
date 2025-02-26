@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import { Book } from "lucide-react";
 import bgImage from "@/app/assets/img/bg.webp";

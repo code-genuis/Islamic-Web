@@ -1,10 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Book } from "lucide-react";
 import { HeaderMenu } from "@/app/mockData/data";
+import logo1 from "@/app/assets/img/UstazPortal_Logo1.ico";
+import logo2 from "@/app/assets/img/UstazPortal_Logo2.ico";
+import { Menu, X } from "lucide-react";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,37 +25,63 @@ export function Header() {
         scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
-      <nav className="container mx-auto px-4 flex items-center justify-between">
-        <ul className="flex items-center gap-6">
+      <nav className="container mx-auto px-4 flex items-center justify-between max-w-[1200px] flex-wrap">
+        {/* Hamburger Menu */}
+        <button
+          className="md:hidden p-2 text-primary"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <X size={30} /> : <Menu size={30} />}
+        </button>
+
+        {/* Mobile Menu */}
+        <div
+          className={`absolute top-24 left-0 w-full bg-gray-50 shadow-md flex flex-col md:hidden transition-all duration-300 ${
+            menuOpen ? "block" : "hidden"
+          }`}
+        >
           {HeaderMenu.map((menu, index) => (
-            <>
-              <li>
-                <a
-                  key={index}
-                  href={menu.link}
-                  className={`text-base font-medium transition-colors ${
-                    scrolled
-                      ? "text-primary hover:text-secondary text-lg font-semibold"
-                      : "text-white hover:text-secondary"
-                  }`}
-                >
-                  {menu.title}
-                </a>
-              </li>
-            </>
+            <a
+              key={index}
+              href={menu.link}
+              className="text-black text-lg font-medium border-gray-200 p-4 border-b hover:text-primary"
+            >
+              <p>{menu.title}</p>
+            </a>
+          ))}
+        </div>
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex items-center gap-6">
+          {HeaderMenu.map((menu, index) => (
+            <li key={index}>
+              <a
+                href={menu.link}
+                className={`text-base font-medium transition-colors ${
+                  scrolled
+                    ? "text-primary hover:text-secondary text-lg font-semibold"
+                    : "text-white hover:text-secondary"
+                }`}
+              >
+                {menu.title}
+              </a>
+            </li>
           ))}
         </ul>
 
         {/* Center logo */}
         <div
-          className={`flex items-center gap-2 font-bold text-xl transition-colors ${
+          className={`flex items-center gap-2 font-bold text-2xl transition-colors ${
             scrolled ? "text-gray-900" : "text-white"
           }`}
         >
-          <Book
-            className={`h-6 w-6 transition-colors ${
-              scrolled ? "text-primary" : "text-secondary"
-            }`}
+          <img
+            src={scrolled ? logo2.src : logo1.src}
+            alt="UstazPortal"
+            width={scrolled ? "80" : "70"}
+            height={scrolled ? "80" : "70"}
+            loading="eager"
+            className="max-w-full h-auto"
           />
 
           <span
@@ -79,7 +108,7 @@ export function Header() {
             scrolled
               ? "bg-black text-white hover:bg-primary"
               : "bg-white font-semibold text-primary hover:bg-gray-100"
-          }`}
+          } md:block`}
         >
           Login
         </button>

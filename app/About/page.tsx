@@ -4,7 +4,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className="h-screen flex items-center justify-center">This is Course</div>
+      <div className="h-screen flex items-center justify-center">This is About</div>
     </>
   );
 };

@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center w-11/12 mx-4">
         <div className="w-full max-w-7xl backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden border border-gray-700">
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/3 p-8 md:p-12 flex flex-col justify-between bg-gray-50">

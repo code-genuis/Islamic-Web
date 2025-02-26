@@ -9,9 +9,9 @@ const Product = () => {
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-10 -z-10"
         style={{
-          backgroundImage: `url(${bgImage.src})`
+          backgroundImage: `url(${bgImage.src})`,
         }}
-      ></div> 
+      ></div>
       <div className="container mx-auto px-4">
         <h2 className="mb-12 text-center text-4xl font-bold text-secondary">
           Featured <span className="text-primary">Course</span>
@@ -62,10 +62,12 @@ const Product = () => {
                   <p className="text-sm text-gray-500">Course Fee</p>
                   <p className="text-2xl font-bold text-primary">$199</p>
                 </div>
-                <button className="flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-white transition-all hover:bg-gray-50 hover:text-black hover:border-primary hover:border">
-                  <span>Enroll Now</span>
-                  <ArrowRight className="h-5 w-5" />
-                </button>
+                <a href="/Courses/CoursesTajweed">
+                  <button className="flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold text-white transition-all hover:bg-gray-50 hover:text-black hover:border-primary hover:border">
+                    <span>Enroll Now</span>
+                    <ArrowRight className="h-5 w-5" />
+                  </button>
+                </a>
               </div>
             </div>
           </div>

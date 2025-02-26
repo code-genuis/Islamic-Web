@@ -49,6 +49,13 @@ export function Header() {
               <p>{menu.title}</p>
             </a>
           ))}
+          <button
+            title="Login"
+            type="button"
+            className="block md:hidden items-center gap-6 px-6 py-2 text-lg transition-all duration-300 bg-primary text-white hover:bg-black"
+          >
+            Login
+          </button>
         </div>
 
         {/* Desktop Menu */}
@@ -104,7 +111,7 @@ export function Header() {
         <button
           title="Login"
           type="button"
-          className={`rounded-lg px-6 py-2 font-medium text-lg transition-all duration-300 ${
+          className={`rounded-lg px-6 py-2 hidden md:block font-medium text-lg transition-all duration-300 ${
             scrolled
               ? "bg-black text-white hover:bg-primary"
               : "bg-white font-semibold text-primary hover:bg-gray-100"

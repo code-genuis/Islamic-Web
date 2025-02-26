@@ -36,7 +36,7 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen bg-black flex items-center justify-center pt-6 md:pt-12">
+      <div className="min-h-screen bg-black flex items-center justify-center pt-44 pb-24 md:pb-12 md:pt-16">
           <ContactForm />
       </div>
     </>

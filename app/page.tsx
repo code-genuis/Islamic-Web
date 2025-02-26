@@ -53,7 +53,7 @@ const App = () => {
           <ReviewsSlider />
         </div>
       </section>
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center pt-6 md:pt-12">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 md:pt-8">
         <ContactForm />
       </div>
       <ContactBtn />

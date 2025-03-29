@@ -1,17 +1,5 @@
 "use client"
 import React from "react";
-<<<<<<< HEAD
-
-const page = () => {
-  return (
-    <>
-      <div className="h-screen flex items-center justify-center">This is Course</div>
-    </>
-  );
-};
-
-export default page;
-=======
 import {
   Clock,
   Users,
@@ -181,4 +169,3 @@ function Courses() {
 }
 
 export default Courses;
->>>>>>> 4f5dfe3 (first commit)

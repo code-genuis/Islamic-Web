@@ -1,23 +1,12 @@
-<<<<<<< HEAD
-"use client"
-import React from "react";
-import Header from "./component/common/Header";
-import Footer from "./component/common/Footer";
-import ContactBtn from "./component/ui/ContactBtn";
-=======
 import React from "react";
 import Header from "./component/common/Header";
 import Footer from "./component/common/Footer";
 import WhatsAppButton from "./component/ui/ContactBtn";
->>>>>>> 4f5dfe3 (first commit)
 import Hero from "./component/common/Hero";
 import Hero2 from "./component/common/Hero2";
 import Product from "./component/common/Product";
 import FAQ from "./component/common/FAQ";
-<<<<<<< HEAD
-=======
-import ContactPage from "./Contact/page";
->>>>>>> 4f5dfe3 (first commit)
+
 import ReviewsSlider from "./component/common/reviews";
 import bgImage from "@/app/assets/img/bg.webp";
 import ContactForm from "@/app/component/common/ContactForm";
@@ -51,21 +40,12 @@ const App = () => {
         </div>
       </div>
       <section className="relative bg-white py-24 z-10">
-<<<<<<< HEAD
-        <div
-          className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-10 -z-10"
-          style={{
-            backgroundImage: `url(${bgImage.src})`,
-          }}
-        ></div>
-=======
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-10 -z-10"
         style={{
           backgroundImage: `url(${bgImage.src})`
         }}
       ></div> 
->>>>>>> 4f5dfe3 (first commit)
         <div className="container mx-auto px-4">
           <h2 className="mb-2 text-center text-3xl font-bold text-secondary">
             What <span className="text-primary">Our Students</span> Say
@@ -73,17 +53,10 @@ const App = () => {
           <ReviewsSlider />
         </div>
       </section>
-<<<<<<< HEAD
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 md:pt-8">
-        <ContactForm />
-      </div>
-      <ContactBtn />
-=======
       <div className="min-h-screen bg-white flex items-center justify-center pt-6 md:pt-12">
           <ContactForm />
       </div>
       <WhatsAppButton />
->>>>>>> 4f5dfe3 (first commit)
       <Footer />
     </div>
   );

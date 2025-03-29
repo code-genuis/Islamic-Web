@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 "use client"
 import React from "react";
-// import { Play } from "lucide-react";
-=======
-import React from "react";
 import { Play } from "lucide-react";
->>>>>>> 4f5dfe3 (first commit)
 
 function App() {
   return (
@@ -13,17 +8,6 @@ function App() {
       <div className="relative h-screen w-full overflow-hidden">
         <video
           autoPlay
-<<<<<<< HEAD
-          muted
-          className="absolute top-0 left-0 min-h-full min-w-full object-cover"
-        >
-          <source src="https://cdn.shopify.com/videos/c/o/v/b15f331251334e3c80c2533a5acc8764.mp4" type="video/mp4" />
-        </video>
-
-        {/* <div className="absolute inset-0 bg-black/60"></div> */}
-
-        {/* <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
-=======
           loop
           muted
           className="absolute top-0 left-0 min-h-full min-w-full object-cover"
@@ -34,7 +18,6 @@ function App() {
         <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
->>>>>>> 4f5dfe3 (first commit)
           <h1 className="mb-8 text-6xl font-bold text-secondary tracking-wide">
             UstazPortal
           </h1>
@@ -45,11 +28,7 @@ function App() {
             <Play className="h-5 w-5" />
             <span>Start Learning Tajweed Today!</span>
           </button>
-<<<<<<< HEAD
-        </div> */}
-=======
         </div>
->>>>>>> 4f5dfe3 (first commit)
       </div>
     </>
   );

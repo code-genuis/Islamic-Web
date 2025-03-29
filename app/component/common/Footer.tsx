@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-"use client"
-=======
->>>>>>> 4f5dfe3 (first commit)
 import React from "react";
 import { Book } from "lucide-react";
 import bgImage from "@/app/assets/img/bg.webp";
